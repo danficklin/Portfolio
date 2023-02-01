@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dan Ficklin- Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Welcome to my portfolio</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a target="_blank" href="https://docs.google.com/document/d/1A3ypDHxxXJNGfubuLiRD5ccjZ2QfSj3ULJsTVCGmXpY/edit?usp=sharing" class="nav-link">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1><span class="text-danger"> Dan Ficklin</span>,</h1>
+            <h1>writer and C# developer,</h1>
+            <p class="lead my-4">
+              is looking for his first job as a dev.
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#hire"
+            >
+              Hire me!
+            </button>
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="img/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">About me</h2>
+        <div class="accordion accordion-flush" id="questions">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                Who are you?
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                Where are you located?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                What experience do you have?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                What are your skills?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                How can I contact you?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#questions"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                beatae fuga animi distinctio perspiciatis adipisci velit maiores
+                totam tempora accusamus modi explicabo accusantium consequatur,
+                praesentium rem quisquam molestias at quos vero. Officiis ad
+                velit doloremque at. Dignissimos praesentium necessitatibus
+                natus corrupti cum consequatur aliquam! Minima molestias iure
+                quam distinctio velit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instructors" class="p-5 bg-dark">
+      <div class="container">
+        <h2 class="text-center text-white">My projects</h2>
+        <p class="lead text-center text-white mb-5">
+          Here is a sample of a few of my past projects.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">CanvassPlan</h3>
+                <p class="card-text">
+                  My final project in the Eleven Fifty Academy Software Development course was a planning tool that helps political organizers assign volunteers and staff to sites for political canvassing and other ground-game operations, taking into account things like drivers, team leaders, and transportation availability.
+                </p>
+                <a href="https://github.com/danficklin/CanvassPlan"><i class="bi bi-github text-dark mx-1"></i> Github repository</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Who's that Pokémon?</h3>
+                <br>
+                <p class="card-text">
+                  This game was also created as a project at Eleven Fifty Academy, and uses the PokéAPI to randomly generate the silhouette of one of the various pokémon, allowing the user to try to guess which one it is before revealing it.
+                  
+                </p>
+
+                <br>
+                <a href="https://danficklin.github.io/APIChallenge/"><i class="bi bi-github text-dark mx-1"></i> Github page</a>
+                <br>
+                <a href="https://github.com/danficklin/APIChallenge/"><i class="bi bi-github text-dark mx-1"></i> Github repository</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Pendragon Character Generator</h3>
+                <p class="card-text">
+                  This is a personal project I worked on after finishing at Eleven Fifty Academy, which allows the user to generate a family history and character for the tabletop RPG Pendragon, which involves a complicated system for generating your character's background that is made easy with this app.
+                </p>
+                <a href="https://github.com/danficklin/Pendragon"><i class="bi bi-github text-dark mx-1"></i> Github repository</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Mercury</h3>
+                <br>
+                <br>
+                <p class="card-text">
+                  This is a text-based roleplaying game that allows the player to travel through space, exploring moons and wrecked ships, and avoiding or fighting space pirates and enemy aliens.
+                </p>
+                <br>
+                <br>
+                <a href="https://github.com/danficklin/Mercury"><i class="bi bi-github text-dark mx-1"></i> Github repository</a>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Dice Roller</h3>
+                <p class="card-text">
+                  This app allows the user to generate ability scores for games like Dungeons and Dragons or Pathfinder using a variety of common methods. 
+                </p>
+                <a href="https://github.com/danficklin/DiceRoller"><i class="bi bi-github text-dark mx-1"></i> Github repository</a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">The Korvosan Matrimony</h3>
+                <p class="card-text">
+                  This is an adventure I wrote for my tabletop RPG group for our homebrew Pathfinder game. The game is set in the Pathfinder Campaign Setting so many of the names are copyrighted material belonging to Paizo Inc., and this adventure is obviously not for commercial distribution, but it gives an example of my writing style in that format.
+                </p>
+                <a href="https://docs.google.com/document/d/1zo-3hrtb_al0gcjz35pEss3XCxI4uZuILeIiefPxrFU/edit?usp=sharing" target="_blank" type="button" class="btn btn-primary">Adventure!</a>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <h3 class="card-title mb-3">Loremasters of Pathfinder</h3>
+                <p class="card-text">
+                  This is a playlist that contains several of the videos I have recently been writing, producing, voicing, and editing regarding the lore of the Pathfinder Campaign Setting, for a channel I call Loremasters of Pathfinder. The videos are currently unlisted as they are mainly for my friends, but I may publish them at some point.
+                </p>
+                <a href="https://www.youtube.com/playlist?list=PLs4Hk0HS-R-iF2zPuWUVVUdseY_gjT4_Q" target="_blank" type="button" class="btn btn-primary">Videos!</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <h3 class="card-title mb-3">RPG Maps</h3>
+            <p class="card-text">
+              Here is a collecton of maps I have made using the program Inkarnate, useful for tabletop RPG games.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1ccmuUah6It-jTFKSyrQa5U4zqJCEwKZf?usp=sharing" target="_blank" type="button" class="btn btn-primary">Maps!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">&copy;2023 Daniel L. Ficklin</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="hire"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enrollLabel">Thank you for your interest!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Please leave your information and a message and I will get back to you as soon as possible.</p>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="col-form-label">
+                  Name:
+                </label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="last-name" class="col-form-label">Company:</label>
+                <input type="text" class="form-control" id="last-name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Email:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="col-form-label">Phone:</label>
+                <input type="tel" class="form-control" id="phone" />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="col-form-label">Message:</label>
+                <input type="text" class="form-control" id="message" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
